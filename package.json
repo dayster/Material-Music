@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "coverflow-react": "^0.1.28",
     "mdbreact": "4.8.4",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
