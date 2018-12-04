@@ -14,6 +14,7 @@ import AnimationPage from "./pages/AnimationPage";
 import AlertPage from "./pages/AlertPage";
 import HomePage from "./pages/HomePage";
 import Music from "./pages/Music";
+import Detail from "./pages/Detail";
 import ButtonPage from "./pages/ButtonPage";
 import CSSPage from "./pages/CSSPage";
 import TablePage from "./pages/TablePage";
@@ -50,6 +51,8 @@ import SearchPage from "./pages/SearchPage";
 import ValidationPage from "./pages/ValidationPage";
 import NavbarPage from "./pages/NavbarPage";
 import IframePage from "./pages/IframePage";
+import World from "./pages/World";
+import FeedBack from "./pages/FeedBack";
 
 class Routes extends React.Component {
   render() {
@@ -57,6 +60,9 @@ class Routes extends React.Component {
       <Switch>
         <Route exact path="/music" component={HomePage} />
         <Route exact path="/" component={Music} />
+        <Route exact path="/world" component={World} />
+        <Route exact path="/detail" component={Detail} />
+        <Route exact path="/feedback" component={FeedBack} />
         <Route exact path="/css" component={CSSPage} />
         <Route exact path="/components" component={ComponentsNavPage} />
         <Route exact path="/advanced" component={AdvancedNavPage} />
