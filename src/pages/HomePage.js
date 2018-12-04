@@ -12,10 +12,8 @@ import {
     CardImage,
     CardTitle,
     CardText,
-    ListGroup,
-    ListGroupItem,
     Badge,
-    MDBBtn
+    MDBBtn,MDBListGroup, MDBListGroupItem, MDBBadge
   } from "mdbreact";
 
 class Home extends React.Component {
@@ -49,15 +47,14 @@ class Home extends React.Component {
         </ul>
         PLAYLISTS
         <ul className="fa-ul">
-          <li><Fa icon="cc-discover" list/>  Discover Weekly</li>
-          <li><Fa icon="check-square" list/>  Bento</li>
-          <li><Fa icon="spinner" list spin/>  Dance Beats</li> 
-          <li><Fa icon="spinner" list spin/>  Hot Hot Hot</li>          
+          <li><i class="fa fa-music"></i>  Discover Weekly</li>
+          <li><i class="fa fa-music"></i>  Bento</li>
+          <li><i class="fa fa-music"></i> Dance Beats</li> 
+          <li><i class="fa fa-music"></i>  Hot Hot Hot</li>          
         </ul>
         </Col>
           <Col md="8">
           <Navbar
-              color="black"
               dark
               expand="md"
               scrolling
@@ -97,7 +94,7 @@ class Home extends React.Component {
             <CardGroup deck className="mt-3">
             <Card>
               <CardImage
-                src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
+                src="https://t.scdn.co/media/derived/edm-274x274_0ef612604200a9c14995432994455a6d_0_0_274_274.jpg"
                 alt="Card image cap"
                 top
                 hover
@@ -113,7 +110,7 @@ class Home extends React.Component {
 
             <Card>
               <CardImage
-                src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg"
+                src="https://t.scdn.co/media/derived/jazz-274x274_d6f407453a1f43d3163c55cca624a764_0_0_274_274.jpg"
                 alt="Card image cap"
                 top
                 hover
@@ -129,7 +126,7 @@ class Home extends React.Component {
 
             <Card>
               <CardImage
-                src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg"
+                src="https://t.scdn.co/media/categories/karaoke_274x274.jpg"
                 alt="Card image cap"
                 top
                 hover
@@ -149,7 +146,7 @@ class Home extends React.Component {
         <Col md="3">
             <View>
             <img
-                src="https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg"
+                src="https://t.scdn.co/media/derived/pop-274x274_447148649685019f5e2a03a39e78ba52_0_0_274_274.jpg"
                 className="img-fluid"
                 alt=""
             />
@@ -161,7 +158,7 @@ class Home extends React.Component {
         <Col md="3">
             <View>
             <img
-                src="https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg"
+                src="https://t.scdn.co/media/derived/edm-274x274_0ef612604200a9c14995432994455a6d_0_0_274_274.jpg"
                 className="img-fluid"
                 alt=""
             />
@@ -173,7 +170,7 @@ class Home extends React.Component {
         <Col md="3">
             <View>
             <img
-                src="https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg"
+                src="https://t.scdn.co/media/original/hip-274_0a661854d61e29eace5fe63f73495e68_274x274.jpg"
                 className="img-fluid"
                 alt=""
             />
@@ -185,7 +182,7 @@ class Home extends React.Component {
         <Col md="3">
             <View>
             <img
-                src="https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg"
+                src="https://t.scdn.co/media/derived/travel-274x274_1e89cd5b42cf8bd2ff8fc4fb26f2e955_0_0_274_274.jpg"
                 className="img-fluid"
                 alt=""
             />
@@ -201,7 +198,7 @@ class Home extends React.Component {
         <Col md="3">
             <View>
             <img
-                src="https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg"
+                src="https://t.scdn.co/media/derived/rock_9ce79e0a4ef901bbd10494f5b855d3cc_0_0_274_274.jpg"
                 className="img-fluid"
                 alt=""
             />
@@ -213,7 +210,7 @@ class Home extends React.Component {
         <Col md="3">
             <View>
             <img
-                src="https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg"
+                src="https://t.scdn.co/images/fe06caf056474bc58862591cd60b57fc.jpeg"
                 className="img-fluid"
                 alt=""
             />
@@ -225,7 +222,7 @@ class Home extends React.Component {
         <Col md="3">
             <View>
             <img
-                src="https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg"
+                src="https://t.scdn.co/media/derived/r-b-274x274_fd56efa72f4f63764b011b68121581d8_0_0_274_274.jpg"
                 className="img-fluid"
                 alt=""
             />
@@ -237,7 +234,7 @@ class Home extends React.Component {
         <Col md="3">
             <View>
             <img
-                src="https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg"
+                src="https://t.scdn.co/images/7fe0f2c9c91f45a3b6bae49d298201a4.jpeg"
                 className="img-fluid"
                 alt=""
             />
@@ -269,75 +266,32 @@ class Home extends React.Component {
                 </div>
             </Mask>
             </View>
-            <ListGroup>
-              <ListGroupItem
-                href="#"
-                className="d-flex justify-content-between align-items-center"
-              >
-                <Fa icon="user-circle" size="2x"/> <Badge>Dayster Content</Badge>
-              </ListGroupItem>
-              <ListGroupItem
-                active
-                href="#"
-                className="d-flex justify-content-between align-items-center"
-              >
-                <Fa icon="user-circle" size="2x"/> <Badge>Dayster Content</Badge>
-              </ListGroupItem>
-              <ListGroupItem className="d-flex justify-content-between align-items-center">
-              <Fa icon="user-circle" size="2x"/> <Badge>Dayster Content</Badge>
-              </ListGroupItem>
-              <ListGroupItem
-                active
-                className="d-flex justify-content-between align-items-center"
-              >
-                <Fa icon="user-circle" size="2x"/> <Badge>Dayster Content</Badge>
-              </ListGroupItem>
-              <ListGroupItem
-                href="#"
-                className="d-flex justify-content-between align-items-center"
-              >
-                <Fa icon="user-circle" size="2x"/> <Badge>Dayster Content</Badge>
-              </ListGroupItem>
-              {/* 
-              <ListGroupItem
-                active
-                href="#"
-                className="d-flex justify-content-between align-items-center"
-              >
-                <Fa icon="user-circle" size="2x"/> <Badge>Dayster Content</Badge>
-              </ListGroupItem>
-              <ListGroupItem className="d-flex justify-content-between align-items-center">
-              <Fa icon="user-circle" size="2x"/> <Badge>Dayster Content</Badge>
-              </ListGroupItem>
-              <ListGroupItem
-                active
-                className="d-flex justify-content-between align-items-center"
-              >
-                <Fa icon="user-circle" size="2x"/> <Badge>Dayster Content</Badge>
-              </ListGroupItem>
-              <ListGroupItem
-                href="#"
-                className="d-flex justify-content-between align-items-center"
-              >
-                <Fa icon="user-circle" size="2x"/> <Badge>Dayster Content</Badge>
-              </ListGroupItem>
-              <ListGroupItem
-                active
-                href="#"
-                className="d-flex justify-content-between align-items-center"
-              >
-                <Fa icon="user-circle" size="2x"/> <Badge>Dayster Content</Badge>
-              </ListGroupItem>
-              <ListGroupItem className="d-flex justify-content-between align-items-center">
-              <Fa icon="user-circle" size="2x"/> <Badge>Dayster Content</Badge>
-              </ListGroupItem>
-              <ListGroupItem
-                active
-                className="d-flex justify-content-between align-items-center"
-              >
-               <Fa icon="user-circle" size="2x"/> <Badge>Dayster Content</Badge>
-              </ListGroupItem> */}
-            </ListGroup>
+            <MDBListGroup>
+            <MDBListGroupItem className="d-flex justify-content-between align-items-center"><MDBBadge color="primary"
+                  pill>14</MDBBadge>Taylor Swift<Badge color="purple" pill><Fa icon="comments-o" aria-hidden="true"/></Badge> 
+              </MDBListGroupItem>
+              <MDBListGroupItem className="d-flex justify-content-between align-items-center"><MDBBadge color="primary"
+                  pill>2</MDBBadge>Slipknot<Badge color="purple" pill><Fa icon="comments-o" aria-hidden="true"/></Badge> 
+              </MDBListGroupItem>
+              <MDBListGroupItem className="d-flex justify-content-between align-items-center"><MDBBadge color="primary"
+                  pill>1</MDBBadge>Madonna<Badge color="purple" pill><Fa icon="comments-o" aria-hidden="true"/></Badge> 
+              </MDBListGroupItem>
+              <MDBListGroupItem className="d-flex justify-content-between align-items-center"><MDBBadge color="primary"
+                  pill>25</MDBBadge>Linkinpark<Badge color="purple" pill><Fa icon="comments-o" aria-hidden="true"/></Badge> 
+              </MDBListGroupItem>
+              <MDBListGroupItem className="d-flex justify-content-between align-items-center"><MDBBadge color="primary"
+                  pill>30</MDBBadge>Korn<Badge color="purple" pill><Fa icon="comments-o" aria-hidden="true"/></Badge> 
+              </MDBListGroupItem>
+              <MDBListGroupItem className="d-flex justify-content-between align-items-center"><MDBBadge color="primary"
+                  pill>32</MDBBadge>Queen<Badge color="purple" pill><Fa icon="comments-o" aria-hidden="true"/></Badge> 
+              </MDBListGroupItem>
+              <MDBListGroupItem className="d-flex justify-content-between align-items-center"><MDBBadge color="primary"
+                  pill>25</MDBBadge>Metallica<Badge color="purple" pill><Fa icon="comments-o" aria-hidden="true"/></Badge> 
+              </MDBListGroupItem>
+              <MDBListGroupItem className="d-flex justify-content-between align-items-center"><MDBBadge color="primary"
+                  pill>33</MDBBadge>Adele<Badge color="purple" pill><Fa icon="comments-o" aria-hidden="true"/></Badge> 
+              </MDBListGroupItem>
+            </MDBListGroup>
         </Col>
         </Row>
         </div>
